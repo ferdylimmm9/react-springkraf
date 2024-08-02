@@ -1,0 +1,51 @@
+{
+  "name": "react-springkraf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run prettier && npm run lint"
+  },
+  "keywords": [],
+  "author": "ferdylimm9",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/invariant": "^2.2.37",
+    "@types/node": "^20",
+    "@types/react": "^18.3.3",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-universe": "^12.0.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.2.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4",
+    "react-freeze": "^1.0.4",
+    "react-hook-form": "^7.52.1",
+    "react-to-pdf": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferdylimmm9/react-springkraf.git"
+  }
+}
