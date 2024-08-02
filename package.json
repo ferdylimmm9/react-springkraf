@@ -15,9 +15,8 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run prettier && npm run lint"
   },
-  "keywords": [],
-  "author": "ferdylimm9",
-  "license": "ISC",
+  "author": "Ferdy Lim (ferdylimmm9)",
+  "license": "MIT",
   "devDependencies": {
     "@types/invariant": "^2.2.37",
     "@types/node": "^20",
@@ -47,5 +46,18 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ferdylimmm9/react-springkraf.git"
-  }
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "typescript",
+    "hooks"
+  ]
 }
