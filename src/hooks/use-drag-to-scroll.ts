@@ -30,6 +30,7 @@ export default function useDragToScroll() {
       startX.current = event.pageX - element.offsetLeft;
       scrollLeft.current = element.scrollLeft;
     };
+
     const mouseLeave = (event: MouseEvent) => {
       isDown.current = false;
     };
